@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gsc.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+
+<body>
+    <div id="upper_part">
+        <div id="left_upper">
+            <div id="left_upper_logo">
+                <img src="./imgs/spreadsheets-48.png" alt="ok">
+
+            </div>
+            <div id="left_upper_star_and_txt">
+                <div id="titlw_and_staar">
+                    <div style="font-size: 18px;" class="text_all" contenteditable="true">Untitled spreadsheet</div>
+                    <span id="star_id" class="material-symbols-outlined">star</span>
+                </div>
+                <div id="all_text">
+                    <div class="text_all">File</div>
+                    <div class="text_all">Edit</div>
+                    <div class="text_all">View</div>
+                    <div class="text_all">Insert</div>
+                    <div class="text_all">Format</div>
+                    <div class="text_all">Data</div>
+                    <div class="text_all">Tools</div>
+                    <div class="text_all">Extensions</div>
+                    <div class="text_all">Help</div>
+                </div>
+            </div>
+        </div>
+        <div id="right_upper">
+            <span class="material-symbols-outlined">comment</span>
+            <div id="meet_icon_div">
+                <span class="material-symbols-outlined">videocam</span>
+                <select id="meet_drop">
+                    <option value="">Join or start meeeting</option>
+                </select>
+            </div>
+            <div id="Share_icon_div">
+                <div class="material-symbols-outlined">lock</div>
+                <div class="text_all">Share</div>
+                <select name="" id="share_drop">
+                    <option value="">Copy like</option>
+                </select>
+            </div>
+            <span class="material-symbols-outlined">kid_star</span>
+            <span class="material-symbols-outlined">account_circle</span>
+        </div>
+    </div>
+
+    <form id="form_id" class="form_class">
+        <div id="parent_of_div">
+            <div class="filter_class" id="filter">
+                <label for="font_size" class="material-symbols-outlined">remove</label>
+                <input type="number" placeholder="16" max="50" min="12" name="fontSize" value="16" id="font_size">
+                <label for="font_size" class="material-symbols-outlined">add</label>
+                <input type="checkbox" name="fontWeight" value="bold" id="bold">
+                <label for="bold" id="bold_lable" class="material-symbols-outlined">format_bold</label>
+
+                <input type="checkbox" name="fontStyle" value="italic" id="italic">
+                <label for="italic" class="material-symbols-outlined">format_italic</label>
+
+                <input type="checkbox" name="textDecoration" value="underline" id="under_line">
+                <label for="under_line" class="material-symbols-outlined">format_underlined</label>
+
+                <input type="radio" name="textAlign" value="left" id="align_lefgt">
+                <label for="align_lefgt" class="material-symbols-outlined">format_align_left</label>
+
+                <input type="radio" name="textAlign" value="center" id="align_center">
+                <label for="align_center" class="material-symbols-outlined">format_align_center</label>
+
+                <input type="radio" name="textAlign" value="right" id="align_right">
+                <label for="align_right" class="material-symbols-outlined">format_align_right</label>
+
+                <input type="color" name="color" value="#000000" id="font-color">
+                <label for="font-color" class="material-symbols-outlined">format_color_text</label>
+
+                <input type="color" name="backgroundColor" value="#ffffff" id="back-color">
+                <label for="back-color" class="material-symbols-outlined">format_color_fill</label>
+
+            </div>
+            <div id="right_filter_arrow">
+               
+                <label class="material-symbols-outlined" for="toggle_arrow" id="keyboard_arrow_up">keyboard_arrow_up</label>
+                <!-- <label class="material-symbols-outlined" for="toggle_arrow" id="keyboard_arrow_down">keyboard_arrow_down</lable> -->
+                    <input type="checkbox" name="" id="toggle_arrow">
+            </div>
+        </div>
+    </form>
+    <div class="see">
+        <div id="selected_cell"></div>
+        <label for="text_edt" id="l_text_edt">fx</label>
+        <div id="text_edt" contenteditable="true"></div>
+    </div>
+    <div class="container">
+        <div class="junction" id="junction_id"></div>
+        <div class="head-row"></div>
+        <div class="serial-no"></div>
+        <div class="main-body"></div>
+    </div>
+
+    <script src="gsc.js"></script>
+</body>
+
+</html>
